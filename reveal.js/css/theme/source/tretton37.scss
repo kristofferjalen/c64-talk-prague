@@ -1,0 +1,85 @@
+/**
+ * tretton37 theme for reveal.js.
+ *
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #052b53;
+
+$mainColor: #80c365;
+$headingColor: #fff;
+
+$mainFontSize: 42px;
+$mainFont: 'Montserrat', Helvetica, sans-serif;
+$headingFont: 'Montserrat', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: lowercase;
+$headingFontWeight: 600;
+$linkColor: #42affa;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+h2 {
+	&:before {
+        content: "_";
+    }
+}
+
+strong {
+	color: $headingColor;
+	font-weight: bold;
+}
+
+section.has-light-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #222;
+	}
+}
+
+@mixin bodyBackground() {
+	background-image: url(../../../lib/img/_tretton37_logo_green.png);
+    background-size: 7%;
+    background-repeat: no-repeat;
+    background-position: 1% 2%;
+}
+
+img {
+	border: none !important;
+	box-shadow: none !important;	
+}
+
+ol {
+	column-count: 2;
+	column-gap: 110px;
+}
+
+code {
+	background-color: #26282a;
+	padding: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
