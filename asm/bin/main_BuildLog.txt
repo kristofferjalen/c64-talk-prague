@@ -1,0 +1,14 @@
+parsing
+flex pass 1
+flex pass 2
+Output pass
+Writing prg file: C:\Dev\c64-demo-talk-prague\asm\bin\main_Compiled.prg
+
+Memory Map
+----------
+Default-segment:
+  $0801-$080c Basic upstart
+  $0900-$0921 Program
+
+Writing Vice symbol file: C:\Dev\c64-demo-talk-prague\asm\bin\main.vs
+Writing Symbol file: bin\main.sym
