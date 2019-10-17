@@ -11,9 +11,11 @@ talk.md
 talk.html
 ```
 
-`npm start -- --port=1337`
+```
+npm install
+npm start -- --port=1337
+```
 
 Fixa live-reload: https://github.com/hakimel/reveal.js/issues/1889 och https://github.com/gruntjs/grunt-contrib-connect/issues/200
 
 Sidnummer i URL (history: true): https://github.com/hakimel/reveal.js/issues/1712
-
